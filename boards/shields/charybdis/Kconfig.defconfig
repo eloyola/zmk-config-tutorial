@@ -1,6 +1,6 @@
 if SHIELD_SHIELD_CHARYBDIS_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "charybids_left"
+	default "charybdis_left"
 
 endif
