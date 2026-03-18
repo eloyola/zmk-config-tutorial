@@ -68,25 +68,25 @@ text.footer {
 }
 
 /* styling for combo tap, and key non-tap label text */
-text.combo, text.hold, text.shifted, text.left, text.right {
+text.combo, text.hold, text.shifted, text.left, text.right, text.tl, text.tr, text.bl, text.br {
     font-size: 11px;
 }
 
-text.hold {
+text.hold, text.bl, text.br {
     text-anchor: middle;
     dominant-baseline: auto;
 }
 
-text.shifted {
+text.shifted, text.tl, text.tr {
     text-anchor: middle;
     dominant-baseline: hanging;
 }
 
-text.left {
+text.left, text.tl, text.bl {
     text-anchor: start;
 }
 
-text.right {
+text.right, text.tr, text.br {
     text-anchor: end;
 }
 
@@ -1207,7 +1207,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#BASE">
 <text x="0" y="0" class="key tap layer-activator">BASE</text>
-</a></g>
+</a><text x="0" y="24" class="key hold">toggle</text>
+</g>
 <g transform="translate(84, 161)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
@@ -1342,6 +1343,9 @@ path.combo {
 <path d="M432,358 l-114,6" class="combo"/>
 <path d="M432,358 l114,-6" class="combo"/>
 <rect rx="6" ry="6" x="418" y="345" width="28" height="26" class="combo"/>
+<a href="#SETTINGS">
+<text x="432" y="358" class="combo tap layer-activator"><tspan style="font-size: 88%">SETTINGS</tspan></text>
+</a><text x="432" y="369" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
